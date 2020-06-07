@@ -1,0 +1,16 @@
+CREATE DATABASE quillhash;
+
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50),
+    email TEXT,
+    password TEXT,
+    liked BOOLEAN,
+    blocked BOOLEAN,
+    image  text
+);
+
+INSERT INTO users (name, email, password, liked, blocked, image)
+
+    VALUES ('demofirst', 'demofirst@gmail.com', '1234567', 'false', 'false', 'image data to be uploaded'),
+    VALUES ('demosecond', 'demosecond@gmail.com', '1234567', 'false', 'false', 'image2 data to be uploaded');
